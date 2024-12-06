@@ -22,7 +22,6 @@ export const POST = async (request: NextRequest) => {
       throw result;
     }
 
-    console.log(outcome);
     if (!outcome.success) {
       return Response.json({ data: "failed" }, { status: 400 });
     }
